@@ -1,5 +1,10 @@
 package hibernate;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public class Address implements java.io.Serializable {
 
 	Integer adrsId;

@@ -37,8 +37,8 @@ public class RestfulWebserviceExample {
 	 
      @GET
      @Produces(MediaType.APPLICATION_JSON)
-     public List<Person> getPersons()  
-	 {  
+     public List<Person> getPersons()
+	 {
        List<Person> listOfPersons = personService.getAllPersons();	 
 	   return listOfPersons;
 	 }
@@ -47,8 +47,9 @@ public class RestfulWebserviceExample {
      @Path("/{id}")  
      @Produces(MediaType.APPLICATION_JSON)  
 	 public Person getPersonById(@PathParam("id") int id)
-	 {  
-    	 return personService.getPerson(id);
+	 {
+
+		 return personService.getPerson(id);
 	 }  
 	       
      @POST  

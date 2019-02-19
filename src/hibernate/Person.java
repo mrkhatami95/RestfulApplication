@@ -2,6 +2,11 @@ package hibernate;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public class Person implements java.io.Serializable{  
     
 	private Integer personId;  
