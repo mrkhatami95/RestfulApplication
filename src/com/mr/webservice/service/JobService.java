@@ -6,6 +6,11 @@ import com.mr.webservice.dao.JobDAOImpl;
 
 import hibernate.Job;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public class JobService {
 	
 	JobDAOImpl jobDAO = new JobDAOImpl();

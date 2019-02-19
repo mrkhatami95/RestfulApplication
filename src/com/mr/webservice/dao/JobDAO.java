@@ -1,7 +1,11 @@
 package com.mr.webservice.dao;
 
 import hibernate.Job;
-import hibernate.Person;
+
+/*
+* Created by Mohammadreza
+* October 2016
+* */
 
 public interface JobDAO {
 	Job addJob(Job job);

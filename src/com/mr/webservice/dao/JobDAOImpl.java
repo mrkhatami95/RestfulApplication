@@ -10,6 +10,11 @@ import hibernate.Job;
 import hibernate.Person;
 import util.HibernateUtil;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public class JobDAOImpl implements JobDAO {
 
 	@Override

@@ -6,6 +6,11 @@ import com.mr.webservice.dao.PersonDAOImpl;
 
 import hibernate.Person;  
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public class PersonService {  
 	  
 	 PersonDAOImpl personDAOImpl = new PersonDAOImpl();

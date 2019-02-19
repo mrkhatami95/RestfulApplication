@@ -4,6 +4,11 @@ import java.util.List;
 
 import hibernate.Person;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 public interface PersonDAO {
 
 	Person addPerson(Person person);

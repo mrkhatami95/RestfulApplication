@@ -15,6 +15,11 @@ import com.mr.webservice.service.PersonService;
 
 import hibernate.Person;
 
+/*
+* Created by Mohammadreza
+* October 2016
+* */
+
 @Path("/person")
 public class RestfulWebserviceExample {
 
@@ -31,7 +36,7 @@ public class RestfulWebserviceExample {
 	 //PersonDAOImpl personDAO = new PersonDAOImpl();
 	 
      @GET
-     @Produces(MediaType.APPLICATION_JSON)  
+     @Produces(MediaType.APPLICATION_JSON)
      public List<Person> getPersons()  
 	 {  
        List<Person> listOfPersons = personService.getAllPersons();	 
