@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernate">
+    <class name="Person" table="PERSON" schema="public">
+        
+        <id name="personId" type="java.lang.Integer">
+            <column name="PERSON_ID" />
+            <generator class="identity" />
+        </id>
+        
+        <property name="PersonName" type="string">
+            <column name="PERSON_NAME" length="40" not-null="true" unique="true" />
+        </property>
+        
+        <one-to-one	name="address" class="Address" cascade="all" />
+	    
+        <many-to-one name="job" class="Job" fetch="select" >
+       		<column name="jobId" />
+       	</many-to-one>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernate">
+    <class name="Address" table="ADDRESS" schema="public">
+        	
+        <id name="adrsId" type="java.lang.Integer">
+            <column name="ADRSID" />
+            <generator class="identity" />
+        </id>
+        
+        <property name="address" type="string">
+            <column name="ADDRESS" length="80" not-null="true" unique="true" />
+        </property>
+        
+        <!-- <one-to-one name="person" class="Person"
+			constrained="true">
+		</one-to-one> -->
+        
+    </class>
+</hibernate-mapping>

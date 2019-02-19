@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernate">
+    <class name="Job" table="JOB" schema="public">
+       
+        <id name="jobId" type="java.lang.Integer">
+            <column name="JOBID" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="TITLE" length="20" not-null="true" unique="true" />
+        </property>
+       
+        <!-- <set name="persons" table="PERSON"
+				inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PERSON_ID" not-null="true" />
+            </key>
+            <one-to-many class="Person" />
+        </set> -->
+        
+    </class>
+</hibernate-mapping>
